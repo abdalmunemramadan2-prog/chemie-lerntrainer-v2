@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemie Lerntrainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Chemie & Naturwissenschaften</h1>
+  <p>Lerntrainer</p>
+</header>
+
+<main>
+
+  <!-- STARTSEITE -->
+  <section id="home" class="page active">
+
+    <h2>Was möchtest du lernen?</h2>
+
+    <div class="menu">
+
+      <button class="menu-card" onclick="openSection('symbols')">
+        <span>🧪</span>
+        <strong>Symbole & Formen</strong>
+        <small>Chemische Symbole und Formen lernen</small>
+      </button>
+
+      <button class="menu-card" onclick="openSection('lab')">
+        <span>🔬</span>
+        <strong>Laborgeräte</strong>
+        <small>Laborgeräte anhand von Bildern erkennen</small>
+      </button>
+
+      <button class="menu-card" onclick="openSection('rules')">
+        <span>📚</span>
+        <strong>Regeln</strong>
+        <small>Fragen und Antworten üben</small>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- SYMBOLE -->
+  <section id="symbols" class="page">
+
+    <button class="back" onclick="goHome()">← Zur Startseite</button>
+
+    <h2>🧪 Symbole & Formen</h2>
+
+    <div id="symbolQuiz"></div>
+
+  </section>
+
+
+  <!-- LABORGERÄTE -->
+  <section id="lab" class="page">
+
+    <button class="back" onclick="goHome()">← Zur Startseite</button>
+
+    <h2>🔬 Laborgeräte</h2>
+
+    <div id="labQuiz"></div>
+
+  </section>
+
+
+  <!-- REGELN -->
+  <section id="rules" class="page">
+
+    <button class="back" onclick="goHome()">← Zur Startseite</button>
+
+    <h2>📚 Regeln</h2>
+
+    <div id="rulesQuiz"></div>
+
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
